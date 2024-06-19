@@ -76,7 +76,7 @@ func main() {
 			}
 			_ = f.Close()
 			if ip.IsIPv6Available.Get() {
-				dns.IPv6Servers.Add(&m)
+				dns.IPv4Servers.Add(&m)
 			} else {
 				dns.IPv4Servers.Add(&m)
 			}
